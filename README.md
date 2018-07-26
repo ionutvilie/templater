@@ -1,5 +1,7 @@
 # templater
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/ionutvilie/templater)](https://goreportcard.com/report/github.com/ionutvilie/templater)
+
 A simple golang cli app that accepts a yaml file as input and applies it over a golang templates folder
 
 ## usage 

@@ -1,0 +1,12 @@
+{{{ define "Title"}}}Humans{{{end}}}
+{{{ define "Template" }}}{
+    "title": "{{{ template "Title" }}}",
+    "data": [ {{{ range $key, $human :=  .Humans }}}{{{if $key}}},{{{end}}}
+    {   "firstName" : "{{{ $human.FirstName }}}",
+        "lastName" : "{{{ $human.LastName }}}",
+        "occupation" : "{{{ $human.Occupation }}}",
+        "phone" : "{{{ $human.Phone }}}"
+    }{{{ end }}}
+    ]
+}
+{{{ end }}}

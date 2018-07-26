@@ -1,0 +1,7 @@
+{{{ define "page"}}}Humans{{{end}}}
+{{{ define "Template" }}}{{{ range $key, $human :=  .Humans }}}
+{{{ $key }}} 
+   {{{ $human.FirstName }}} {{{ $human.LastName }}}
+   {{{ $human.Occupation }}}
+   {{{ $human.Phone }}}{{{ end }}}
+// oops bad template. it misses the final end statement

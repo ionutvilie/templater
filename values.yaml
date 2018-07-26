@@ -1,0 +1,16 @@
+Text: hello.foo.bar
+Humans:
+  - FirstName: James
+    LastName: Darakjy
+    Occupation: Foo
+    Phone: 504-621-8927
+    Type: Homosapien
+  - FirstName: Mitsue
+    LastName: Dilliard
+    Occupation: Bar
+    Phone: 513-570-18939 
+    Type: Homosapien
+Animals:
+  - Type: Dog
+    Name: Boby
+

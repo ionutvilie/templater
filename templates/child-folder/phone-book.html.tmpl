@@ -1,0 +1,29 @@
+{{{ define "Title" }}}Phone Book{{{end}}}
+{{{ define "Template" }}}<!DOCTYPE html>
+<head>
+    <title>{{{ template "Title" }}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    </head>
+    <body>
+        <table style="width:100%">
+        <tr align="left">
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Ocupation</th>
+            <th>Phone</th>
+        </tr>
+        {{{ range $key, $human :=  .Humans }}}
+        <tr key="{{{ $key }}}"> 
+        <td>{{{ $human.FirstName }}}</td> 
+        <td>{{{ $human.LastName }}}</td>
+        <td>{{{ $human.Occupation }}}</td>
+        <td>{{{ $human.Phone }}}</td>
+        </tr>{{{ end }}}
+        </table>
+    <body>
+</html>
+{{{ end }}}

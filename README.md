@@ -2,7 +2,7 @@
 
 A simple golang cli app that accepts a yaml file as input and applies it over a golang templates folder
 
-# usage 
+## usage 
 
 ```bash 
 ./templater -h
@@ -17,7 +17,7 @@ Flags:
       --version                  Show application version.
 ```
 
-# how it works
+## how it works
 
 ```bash
 # values.yaml --- >  /templates/phone-book.json.tmpl -- ( removes .tmpl ) --> /out/phone-book.json
